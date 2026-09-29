@@ -120,7 +120,7 @@ Backend A uses Python's standard library.
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 | # | Section |
 |---|---------|
