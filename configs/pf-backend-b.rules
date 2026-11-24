@@ -1,0 +1,6 @@
+# Phase 2 Extension C: Packet Filter firewall rules for Backend B (Mac 4)
+# Allows traffic to port 3002 ONLY from primary edge (10.7.26.172) and standby edge (10.7.6.90)
+
+pass quick on lo0
+pass in quick proto tcp from { 10.7.26.172, 10.7.6.90 } to any port 3002
+block in quick proto tcp from any to any port 3002
